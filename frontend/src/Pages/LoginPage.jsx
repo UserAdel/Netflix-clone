@@ -45,7 +45,7 @@ const LoginPage = () => {
               />
             </div>
 
-            <button className='w-full bg-red-500 py-2 rounded-lg text-white font-semibold' type="submit">SignUp</button>
+            <button className='w-full bg-red-500 py-2 rounded-lg text-white font-semibold' type="submit">Login</button>
             <div className='flex justify-center items-center'>
               <h1 className='text-white mr-1'>Don't you have An Account</h1>
               <Link to='/Signup' className='text-red-500 hover:underline'>SignUp</Link>
