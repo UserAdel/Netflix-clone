@@ -19,11 +19,11 @@ const SignupPage = () => {
         </Link>
       </header>
 
-      <div className='flex items-center justify-center h-screen w-full'>
+      <div className='flex justify-center items-center mt-20 mx-3'>
         <div className='w-full max-w-md bg-black/60 py-2 px-5 rounded-lg shadow-md'>
           <h1 className='text-white text-center font-bold text-3xl mb-8'>SignUp</h1>
           <form className='space-y-4' onSubmit={handleSignUp}>
-            <div className='space-y-2'>
+            <div className='space-y-2 py-1'>
               <label htmlFor="email" className='text-sm font-medium text-gray-300 block'>Email</label>
               <input
                 type="email"
@@ -34,7 +34,7 @@ const SignupPage = () => {
               />
             </div>
 
-            <div>
+            <div className='space-y-2 py-1'>
               <label htmlFor="username" className='text-sm font-medium text-gray-300 block'>Username</label>
               <input
                 type="text"
@@ -45,7 +45,7 @@ const SignupPage = () => {
               />
             </div>
 
-            <div>
+            <div className='space-y-2 py-1' >
               <label htmlFor="password" className='text-sm font-medium text-gray-300 block'>Password</label>
               <input
                 type="password"
