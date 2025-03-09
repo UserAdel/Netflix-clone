@@ -20,7 +20,7 @@ const SignupPage = () => {
       </header>
 
       <div className='flex items-center justify-center h-screen w-full'>
-        <div className='w-full max-w-md bg-black/60 py-2 px-5 rounded-lg'>
+        <div className='w-full max-w-md bg-black/60 py-2 px-5 rounded-lg shadow-md'>
           <h1 className='text-white text-center font-bold text-3xl mb-8'>SignUp</h1>
           <form className='space-y-4' onSubmit={handleSignUp}>
             <div className='space-y-2'>
