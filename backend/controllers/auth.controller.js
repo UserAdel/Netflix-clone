@@ -1,6 +1,6 @@
 import { User } from "../models/user.model.js";
 import bcryptjs from "bcryptjs";
-import { generateTokenAndSetCookie } from "../utils/generateToken.js";	
+import { generateTokenAndSetCookie } from "../utils/generateToken.js";
 
 export async function signup(req, res) {
 	try {
@@ -72,13 +72,13 @@ export async function login(req, res) {
 
 		const user = await User.findOne({ email: email });
 		if (!user) {
-			return res.status(404).json({ success: false, message: "Invalid credentials" });
+			return res.status(404).json({ success: false, message: "Uncorrect UserName" });
 		}
 
 		const isPasswordCorrect = await bcryptjs.compare(password, user.password);
 
 		if (!isPasswordCorrect) {
-			return res.status(400).json({ success: false, message: "Invalid credentials" });
+			return res.status(400).json({ success: false, message: "UnCorrect Password" });
 		}
 
 		generateTokenAndSetCookie(user._id, res);
