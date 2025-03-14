@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "backend/server.js",
   "scripts": {
-		"dev": "NODE_ENV=development nodemon backend/server.js",
-		"start": "NODE_ENV=production node backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-	},
+    "dev": "node --watch backend/server.js",
+    "start": " node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
   "author": "",
   "type": "module",
   "license": "ISC",
@@ -23,6 +23,7 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.12"
   }
